@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==================== THEME (prevents flash of wrong theme) ==================== -->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var theme = saved ? saved : 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
+    <!-- ==================== BASIC SETTINGS ==================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Angel | B.Tech CSE AI & ML Student and aspiring Machine Learning Engineer"
+    >
+
+    <title>
+        Angel | AI & ML Portfolio
+    </title>
+
+
+    <!-- ==================== GOOGLE FONT ==================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==================== FONT AWESOME ==================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- ==================== CSS ==================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+         ===================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+
+            <!-- Logo -->
+
+            <a href="#home" class="logo">
+
+                <span class="logo-symbol">
+                    A
+                </span>
+
+                <span>
+                    Angel
+                </span>
+
+            </a>
+
+
+
+            <!-- Navigation -->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#experience">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#education">
+                        Education
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#certifications">
+                        Certifications
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#achievements">
+                        Achievements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#coding-profiles">
+                        Coding
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#research">
+                        Research
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+
+            <!-- Navigation Actions -->
+
+            <div class="nav-actions">
+
+                <button
+                    id="theme-toggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode"
+                >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO SECTION
+             ================================================= -->
+
+        <section id="home" class="hero">
+
+
+            <!-- Decorative Background -->
+
+            <div class="hero-background">
+
+                <div class="glow glow-one"></div>
+
+                <div class="glow glow-two"></div>
+
+                <div class="grid-background"></div>
+
+            </div>
+
+
+
+            <!-- Hero Content -->
+
+            <div class="hero-container">
+
+
+                <!-- Small Badge -->
+
+                <div class="hero-badge">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        Open to Learning & Opportunities
+                    </span>
+
+                </div>
+
+
+
+                <!-- Greeting -->
+
+                <p class="hero-greeting">
+                    Hello, I'm
+                </p>
+
+
+
+                <!-- Name -->
+
+                <h1>
+                    Angel
+                </h1>
+
+
+
+                <!-- Main Role -->
+
+                <h2>
+
+                    B.Tech CSE
+
+                    <span>
+                        —
+                    </span>
+
+                    <span class="gradient-text">
+                        AI & ML
+                    </span>
+
+                </h2>
+
+
+
+                <!-- Introduction -->
+
+                <p class="hero-description">
+
+                    An aspiring
+                    <strong>
+                        Machine Learning Engineer
+                    </strong>
+                    passionate about Artificial Intelligence,
+                    Data Science, and building technology
+                    to solve real-world problems.
+
+                </p>
+
+
+
+                <!-- Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="btn btn-primary"
+                    >
+
+                        <span>
+                            Explore My Work
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#contact"
+                        class="btn btn-secondary"
+                    >
+
+                        <span>
+                            Let's Connect
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Social Links -->
+
+                <div class="hero-socials">
+
+                    <a
+                        href="https://github.com/AngelMalaiya22"
+                        target="_blank"
+                        aria-label="GitHub"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/angel-malaiya-b3817a395"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a
+                        href="mailto:2025222124.angel@ug.sharda.ac.in"
+                        aria-label="Email"
+                    >
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Quick Stats -->
+
+                <div class="hero-stats">
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            815+
+                        </strong>
+
+                        <span>
+                            Problems Solved
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            5+
+                        </strong>
+
+                        <span>
+                            ML Projects
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            1
+                        </strong>
+
+                        <span>
+                            Internship
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Scroll Indicator -->
+
+            <a
+                href="#about"
+                class="scroll-indicator"
+            >
+
+                <span>
+                    Scroll to explore
+                </span>
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT SECTION
+             ================================================= -->
+
+        <section id="about" class="about section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    GET TO KNOW ME
+                </span>
+
+                <h2>
+                    About Me
+                </h2>
+
+                <p>
+                    A little about my journey, interests and goals.
+                </p>
+
+            </div>
+
+
+
+            <div class="about-container">
+
+
+                <!-- Profile Image -->
+
+                <div class="about-image-wrapper">
+
+                    <div class="about-image-border">
+
+                        <img
+                            src="Image/My photo.jpg"
+                            alt="Profile picture of Angel"
+                            class="about-image"
+                        >
+
+                    </div>
+
+
+                    <div class="about-image-badge">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <span>
+                            AI & ML
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- About Content -->
+
+                <div class="about-content">
+
+                    <span class="about-small-title">
+                        AI & ML Student
+                    </span>
+
+
+                    <h3>
+                        Building my path toward
+                        <span class="gradient-text">
+                            Machine Learning Engineering
+                        </span>
+                    </h3>
+
+
+                    <p>
+
+                        I am a B.Tech Computer Science Engineering
+                        student specializing in Artificial Intelligence
+                        and Machine Learning at Sharda University.
+
+                    </p>
+
+
+                    <p>
+
+                        I am passionate about Machine Learning,
+                        Data Science, Software Development, and
+                        solving real-world problems through technology.
+
+                    </p>
+
+
+                    <p>
+
+                        Currently, I am strengthening my foundations
+                        in Java, Data Structures & Algorithms, Python,
+                        Machine Learning, and Web Development while
+                        building practical projects.
+
+                    </p>
+
+
+
+                    <!-- Details -->
+
+                    <div class="about-details">
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Degree
+                            </span>
+
+                            <strong>
+                                B.Tech CSE — AI & ML
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                University
+                            </span>
+
+                            <strong>
+                                Sharda University
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Focus
+                            </span>
+
+                            <strong>
+                                Machine Learning & AI
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Career Goal
+                            </span>
+
+                            <strong>
+                                Machine Learning Engineer
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SKILLS SECTION
+             ================================================= -->
+
+        <section id="skills" class="skills section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    MY TOOLKIT
+                </span>
+
+                <h2>
+                    Skills & Technologies
+                </h2>
+
+                <p>
+                    Technologies and tools I am learning and working with.
+                </p>
+
+            </div>
+
+
+
+            <div class="skills-container">
+
+
+                <!-- Programming -->
+
+                <div class="skill-category">
+
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Programming languages and fundamentals.
+                    </p>
+
+
+                    <div class="skill-list">
+
+                        <span>
+                            Java
+                        </span>
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            C
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Web Development -->
+
+                <div class="skill-category">
+
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Building modern and responsive websites.
+                    </p>
+
+
+                    <div class="skill-list">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- AI & ML -->
+
+                <div class="skill-category">
+
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <h3>
+                        AI & Machine Learning
+                    </h3>
+
+                    <p>
+                        Data analysis and machine learning workflows.
+                    </p>
+
+
+                    <div class="skill-list">
+
+                        <span>
+                            Machine Learning
+                        </span>
+
+                        <span>
+                            NumPy
+                        </span>
+
+                        <span>
+                            Pandas
+                        </span>
+
+                        <span>
+                            Scikit-learn
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Tools -->
+
+                <div class="skill-category">
+
+                    <div class="skill-category-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <h3>
+                        Tools & Technologies
+                    </h3>
+
+                    <p>
+                        Tools I use for development and experimentation.
+                    </p>
+
+
+                    <div class="skill-list">
+
+                        <span>
+                            Git
+                        </span>
+
+                        <span>
+                            GitHub
+                        </span>
+
+                        <span>
+                            VS Code
+                        </span>
+
+                        <span>
+                            Jupyter Notebook
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECTS SECTION
+             ================================================= -->
+
+        <section id="projects" class="projects section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    MY WORK
+                </span>
+
+                <h2>
+                    Featured Projects
+                </h2>
+
+                <p>
+                    Some of the machine learning projects I have worked on.
+                </p>
+
+            </div>
+
+
+
+            <div class="projects-container">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card featured-project">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+
+                    <span class="project-category">
+                        Machine Learning • AgriTech
+                    </span>
+
+
+                    <h3>
+                        AI Smart Farming Assistant
+                    </h3>
+
+
+                    <p>
+
+                        An AI-based agricultural decision-support
+                        system designed to assist farmers with
+                        data-driven crop recommendations and
+                        agricultural decision-making.
+
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Scikit-learn</span>
+                        <span>Machine Learning</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/AngelMalaiya22/AI-Smart-Farming-Crop-Recommendation"
+                            target="_blank"
+                            class="project-link"
+                        >
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+
+                    <span class="project-category">
+                        Machine Learning
+                    </span>
+
+
+                    <h3>
+                        Job Shield
+                    </h3>
+
+
+                    <p>
+
+                        A machine learning project designed to
+                        identify potentially fraudulent job postings
+                        and help users recognize suspicious
+                        recruitment listings.
+
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                        <span>Machine Learning</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/AngelMalaiya22/JobShield-Fake-Job-Detection"
+                            target="_blank"
+                            class="project-link"
+                        >
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+
+
+                    <span class="project-category">
+                        Machine Learning
+                    </span>
+
+
+                    <h3>
+                        Heart Disease Prediction
+                    </h3>
+
+
+                    <p>
+
+                        A machine learning project that predicts
+                        the likelihood of heart disease using
+                        relevant patient health features.
+
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Scikit-learn</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/AngelMalaiya22/Supervised-Learning-Projects/tree/main/Classification/Heart%20Disease%20Predication"
+                            target="_blank"
+                            class="project-link"
+                        >
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 4 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+
+                    <span class="project-category">
+                        Machine Learning • Regression
+                    </span>
+
+
+                    <h3>
+                        Student Performance Prediction
+                    </h3>
+
+
+                    <p>
+
+                        A machine learning project focused on
+                        predicting student performance using
+                        academic and student-related features.
+
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                        <span>Regression</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/AngelMalaiya22/Supervised-Learning-Projects/tree/main/Regression/Student%20Marks%20Predication"
+                            target="_blank"
+                            class="project-link"
+                        >
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 5 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        05
+                    </div>
+
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+
+
+                    <span class="project-category">
+                        Machine Learning • Classification
+                    </span>
+
+
+                    <h3>
+                        Credit Card Fraud Detection
+                    </h3>
+
+
+                    <p>
+
+                        A machine learning project focused on
+                        detecting potentially fraudulent credit
+                        card transactions using transaction data.
+
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                        <span>Classification</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/AngelMalaiya22/Supervised-Learning-Projects/tree/main/Classification/Credit%20Card%20Fraud%20Predication"
+                            target="_blank"
+                            class="project-link"
+                        >
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXPERIENCE SECTION
+             ================================================= -->
+
+        <section id="experience" class="experience section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    MY JOURNEY
+                </span>
+
+                <h2>
+                    Experience
+                </h2>
+
+                <p>
+                    Practical experience and professional learning.
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-dot"></div>
+
+
+                    <div class="timeline-date">
+                        Feb 2026 — Apr 2026
+                    </div>
+
+
+                    <div class="experience-card">
+
+                        <span class="experience-type">
+                            Internship
+                        </span>
+
+                        <h3>
+                            Data Scientist Intern
+                        </h3>
+
+                        <h4>
+                            CodSoft
+                        </h4>
+
+                        <p>
+
+                            Worked on data science and machine learning
+                            tasks, gaining practical experience in data
+                            analysis, model development, and applying
+                            machine learning concepts to real-world datasets.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EDUCATION SECTION
+             ================================================= -->
+
+        <section id="education" class="education section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    ACADEMIC JOURNEY
+                </span>
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
+
+
+
+            <div class="education-card">
+
+
+                <div class="education-icon">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </div>
+
+
+                <div class="education-content">
+
+                    <span class="education-date">
+                        2025 — Present
+                    </span>
+
+
+                    <h3>
+                        B.Tech in Computer Science Engineering
+                    </h3>
+
+
+                    <h4>
+                        Artificial Intelligence & Machine Learning
+                    </h4>
+
+
+                    <p>
+                        Sharda University, Greater Noida
+                    </p>
+
+
+                    <span class="education-status">
+                        Currently Pursuing
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CERTIFICATIONS SECTION
+             ================================================= -->
+
+        <section id="certifications" class="certifications section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    CONTINUOUS LEARNING
+                </span>
+
+                <h2>
+                    Certifications
+                </h2>
+
+                <p>
+                    Courses and certifications that have strengthened
+                    my technical foundation.
+                </p>
+
+            </div>
+
+
+
+            <div class="certifications-container">
+
+
+                <!-- Certificate 1 -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="certificate-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Fundamentals of Machine Learning
+                        </h3>
+
+                        <p>
+                            Infosys Springboard
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Certificate 2 -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="certificate-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Introduction to Data Science
+                        </h3>
+
+                        <p>
+                            Infosys Springboard
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Certificate 3 -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="certificate-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Generative AI Essentials
+                        </h3>
+
+                        <p>
+                            TCS iON
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Certificate 4 -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="certificate-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Applied Machine Learning
+                        </h3>
+
+                        <p>
+                            Sharda University, Greater Noida
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Certificate 5 -->
+
+                <article class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="certificate-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Basics of Python
+                        </h3>
+
+                        <p>
+                            Sharda University, Greater Noida
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACHIEVEMENTS SECTION
+             ================================================= -->
+
+        <section id="achievements" class="achievements section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    MILESTONES
+                </span>
+
+                <h2>
+                    Achievements
+                </h2>
+
+                <p>
+                    Some milestones from my learning and competitive journey.
+                </p>
+
+            </div>
+
+
+
+            <div class="achievements-container">
+
+
+                <!-- Achievement 1 -->
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="achievement-label">
+                            Hackathon
+                        </span>
+
+                        <h3>
+                            Internal Smart India Hackathon
+                        </h3>
+
+                        <p>
+                            Cleared the internal SIH selection process
+                            up to <strong>Round 2</strong>.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Achievement 2 -->
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-ranking-star"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="achievement-label">
+                            Competition Rank
+                        </span>
+
+                        <h3>
+                            GeeksforGeeks Institute Rank
+                        </h3>
+
+                        <p>
+                            Achieved an Institute Rank of
+                            <strong>580</strong>.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Achievement 3 -->
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="achievement-label">
+                            Coding
+                        </span>
+
+                        <h3>
+                            LeetCode Global Ranking
+                        </h3>
+
+                        <p>
+                            Global ranking:
+                            <strong>1,548,529</strong>.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Achievement 4 -->
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="achievement-label">
+                            Contest
+                        </span>
+
+                        <h3>
+                            LeetCode Contest Ranking
+                        </h3>
+
+                        <p>
+                            Contest ranking:
+                            <strong>1,430</strong>.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Achievement 5 -->
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="achievement-label">
+                            Contest
+                        </span>
+
+                        <h3>
+                            CodeChef Contest Ranking
+                        </h3>
+
+                        <p>
+                            Contest ranking:
+                            <strong>993</strong>.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CODING PROFILES SECTION
+             ================================================= -->
+
+        <section id="coding-profiles" class="coding-profiles section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    CODE & PRACTICE
+                </span>
+
+                <h2>
+                    Coding Profiles
+                </h2>
+
+                <p>
+                    My coding practice and problem-solving journey.
+                </p>
+
+            </div>
+
+
+
+            <div class="coding-profiles-container">
+
+
+                <!-- LeetCode -->
+
+                <article class="coding-card leetcode">
+
+                    <div class="coding-platform-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+
+                    <div class="coding-content">
+
+                        <h3>
+                            LeetCode
+                        </h3>
+
+                        <p class="problems-solved">
+
+                            <strong>
+                                106
+                            </strong>
+
+                            Problems Solved
+
+                        </p>
+
+
+                        <a
+                            href="https://leetcode.com/u/Angel_Malaiya/"
+                            target="_blank"
+                            class="profile-link"
+                        >
+
+                            View Profile
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- GeeksforGeeks -->
+
+                <article class="coding-card geeksforgeeks">
+
+                    <div class="coding-platform-icon">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                    </div>
+
+
+                    <div class="coding-content">
+
+                        <h3>
+                            GeeksforGeeks
+                        </h3>
+
+                        <p class="problems-solved">
+
+                            <strong>
+                                234
+                            </strong>
+
+                            Problems Solved
+
+                        </p>
+
+
+                        <a
+                            href="https://www.geeksforgeeks.org/profile/angelmalaiya22?tab=activity"
+                            target="_blank"
+                            class="profile-link"
+                        >
+
+                            View Profile
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CodeChef -->
+
+                <article class="coding-card codechef">
+
+                    <div class="coding-platform-icon">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                    </div>
+
+
+                    <div class="coding-content">
+
+                        <h3>
+                            CodeChef
+                        </h3>
+
+                        <p class="problems-solved">
+
+                            <strong>
+                                415
+                            </strong>
+
+                            Problems Solved
+
+                        </p>
+
+
+                        <a
+                            href="https://www.codechef.com/users/angel29"
+                            target="_blank"
+                            class="profile-link"
+                        >
+
+                            View Profile
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Codeforces -->
+
+                <article class="coding-card codeforces">
+
+                    <div class="coding-platform-icon">
+
+                        <i class="fa-solid fa-code-branch"></i>
+
+                    </div>
+
+
+                    <div class="coding-content">
+
+                        <h3>
+                            Codeforces
+                        </h3>
+
+                        <p class="problems-solved">
+
+                            <strong>
+                                17
+                            </strong>
+
+                            Problems Solved
+
+                        </p>
+
+
+                        <a
+                            href="https://codeforces.com/profile/BugInProgress"
+                            target="_blank"
+                            class="profile-link"
+                        >
+
+                            View Profile
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Codolio -->
+
+                <article class="coding-card codolio">
+
+                    <div class="coding-platform-icon">
+
+                        <i class="fa-solid fa-chart-simple"></i>
+
+                    </div>
+
+
+                    <div class="coding-content">
+
+                        <h3>
+                            Codolio
+                        </h3>
+
+                        <p class="problems-solved">
+
+                            <strong>
+                                815
+                            </strong>
+
+                            Problems Solved
+
+                        </p>
+
+
+                        <a
+                            href="https://codolio.com/profile/Angel_malaiya25"
+                            target="_blank"
+                            class="profile-link"
+                        >
+
+                            View Profile
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESEARCH SECTION
+             ================================================= -->
+
+        <section id="research" class="research section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    RESEARCH & DEVELOPMENT
+                </span>
+
+                <h2>
+                    Research
+                </h2>
+
+                <p>
+                    Exploring the application of AI and Machine Learning
+                    to real-world problems.
+                </p>
+
+            </div>
+
+
+
+            <!-- Main Research Project -->
+
+            <div class="research-project">
+
+
+                <div class="research-project-header">
+
+
+                    <div class="research-project-icon">
+
+                        <i class="fa-solid fa-seedling"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            AI • Machine Learning • AgriTech
+                        </span>
+
+                        <h3>
+                            AI Smart Farming Assistant
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <p class="research-description">
+
+                    An AI-based agricultural decision-support system
+                    focused on using Artificial Intelligence and
+                    Machine Learning to assist farmers with
+                    data-driven agricultural decisions.
+
+                </p>
+
+
+
+                <!-- Research Modules -->
+
+                <div class="research-modules">
+
+
+                    <!-- Module 1 -->
+
+                    <div class="research-module">
+
+                        <div class="module-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Module 01
+                            </span>
+
+                            <h4>
+                                Crop Recommendation
+                            </h4>
+
+                            <p>
+                                Recommending suitable crops based on
+                                soil and environmental parameters.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Module 2 -->
+
+                    <div class="research-module">
+
+                        <div class="module-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Module 02
+                            </span>
+
+                            <h4>
+                                Plant Disease Prediction
+                            </h4>
+
+                            <p>
+                                Identifying plant diseases from leaf
+                                images using deep learning and
+                                computer vision.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Module 3 -->
+
+                    <div class="research-module">
+
+                        <div class="module-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Module 03
+                            </span>
+
+                            <h4>
+                                Weed Detection
+                            </h4>
+
+                            <p>
+                                Detecting weeds in agricultural fields
+                                using computer vision and object
+                                detection techniques.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="research-status">
+
+                    <span class="status-dot"></span>
+
+                    Ongoing Research & Development
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Research Interests -->
+
+            <div class="research-interests">
+
+
+                <h3>
+                    Research Interests
+                </h3>
+
+
+                <div class="interest-list">
+
+                    <span>
+                        Machine Learning
+                    </span>
+
+                    <span>
+                        Artificial Intelligence
+                    </span>
+
+                    <span>
+                        Deep Learning
+                    </span>
+
+                    <span>
+                        Computer Vision
+                    </span>
+
+                    <span>
+                        Explainable AI
+                    </span>
+
+                    <span>
+                        Agricultural AI
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT SECTION
+             ================================================= -->
+
+        <section id="contact" class="contact section">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    LET'S CONNECT
+                </span>
+
+                <h2>
+                    Contact Me
+                </h2>
+
+                <p>
+                    Have an opportunity, idea, or simply want to connect?
+                    Feel free to reach out.
+                </p>
+
+            </div>
+
+
+
+            <div class="contact-container">
+
+
+                <!-- Contact Intro -->
+
+                <div class="contact-intro">
+
+                    <div class="contact-intro-icon">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </div>
+
+
+                    <h3>
+                        Let's connect & build something meaningful.
+                    </h3>
+
+
+                    <p>
+
+                        I'm interested in learning, collaborating,
+                        and working on interesting problems involving
+                        AI, Machine Learning, Data Science and software.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Contact Cards -->
+
+                <div class="contact-info">
+
+
+                    <!-- Email -->
+
+                    <a
+                        href="mailto:2025222124.angel@ug.sharda.ac.in"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Email
+                            </span>
+
+                            <strong>
+                                2025222124.angel@ug.sharda.ac.in
+                            </strong>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+
+                    <!-- LinkedIn -->
+
+                    <a
+                        href="https://www.linkedin.com/in/angel-malaiya-b3817a395"
+                        target="_blank"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                LinkedIn
+                            </span>
+
+                            <strong>
+                                Connect with me
+                            </strong>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+
+                    <!-- GitHub -->
+
+                    <a
+                        href="https://github.com/AngelMalaiya22"
+                        target="_blank"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                GitHub
+                            </span>
+
+                            <strong>
+                                Explore my projects
+                            </strong>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-container">
+
+
+            <!-- Footer Brand -->
+
+            <div class="footer-brand">
+
+                <a href="#home" class="footer-logo">
+
+                    <span class="logo-symbol">
+                        A
+                    </span>
+
+                    Angel
+
+                </a>
+
+
+                <p>
+                    B.Tech CSE — AI & ML
+                </p>
+
+
+                <p class="footer-tagline">
+                    Learning. Building. Growing.
+                </p>
+
+            </div>
+
+
+
+            <!-- Footer Links -->
+
+            <div class="footer-links">
+
+
+                <h4>
+                    Quick Links
+                </h4>
+
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#research">
+                    Research
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <!-- Footer Social -->
+
+            <div class="footer-social">
+
+
+                <h4>
+                    Connect
+                </h4>
+
+
+                <div class="footer-social-links">
+
+                    <a
+                        href="https://github.com/AngelMalaiya22"
+                        target="_blank"
+                        aria-label="GitHub"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/angel-malaiya-b3817a395"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a
+                        href="mailto:2025222124.angel@ug.sharda.ac.in"
+                        aria-label="Email"
+                    >
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Angel. All Rights Reserved.
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
